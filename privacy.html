@@ -3,63 +3,82 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Privacy Policy — Renovatio</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%23b5651d%22/></svg>" />
+  <title>Privacy — Renovatio</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container nav">
-      <a class="brand" href="/">
-        <span class="brand-mark" aria-hidden="true"></span>
-        Renovatio
+      <a class="wordmark" href="/">
+        <span class="rule" aria-hidden="true"></span>
+        <span class="name">Renovatio</span>
       </a>
-      <div class="nav-cta">
-        <a class="btn btn-ghost" href="/">Back to site</a>
+      <div class="nav-right">
+        <a class="theme-toggle" href="/" style="text-decoration:none; display:inline-flex; align-items:center;">Back to site</a>
       </div>
     </div>
   </header>
 
   <main class="doc">
-    <div class="todo">
-      TODO: This is a placeholder. Replace with a real privacy policy before submitting to the
-      App Store / Play Store or launching publicly — it must accurately describe what data
-      Renovatio actually collects and how it's used. Consider a generator (e.g. Termly,
-      iubenda) or a lawyer if you handle sensitive data.
-    </div>
-
-    <span class="eyebrow">Legal</span>
-    <h1>Privacy Policy</h1>
-    <p><em>Last updated: [DATE]</em></p>
+    <span class="eyebrow">Privacy</span>
+    <h1>Renovatio has no server.</h1>
+    <p><em>Last updated: 2026-09-08</em></p>
 
     <p>
-      This Privacy Policy describes how Renovatio ("we", "us", or "our") collects, uses, and
-      shares information when you use the Renovatio app and this website (together, the
-      "Service").
+      Renovatio is a personal analytics app. It reads records you already keep — habits, sleep
+      and heart-rate variability, spending, investments, calendar, location, weather — and
+      reassembles them on your phone. This page states, as precisely as we can, what that means
+      for your data.
     </p>
 
-    <h2>Information we collect</h2>
-    <p>[List the actual data types collected — e.g. account info, device data, usage analytics, content the user creates in the app.]</p>
+    <h2>Personal data never leaves the device</h2>
+    <p>
+      There is no account, no sign-in, and no server that Renovatio talks to. Every join, every
+      calculation, and every summary happens on your iPhone. Nothing you record — habits, health
+      figures, spending, location, calendar entries — is transmitted anywhere by the app.
+    </p>
 
-    <h2>How we use information</h2>
-    <p>[Describe actual usage — e.g. to provide core functionality, improve the app, send transactional emails.]</p>
+    <h2>Summaries are generated on-device</h2>
+    <p>
+      The written briefings in C.A.R.L.O.S. are produced by Apple's on-device foundation model,
+      running locally. No API key, no request, and no piece of your data is sent to a
+      third-party model provider to generate them.
+    </p>
 
-    <h2>Sharing</h2>
-    <p>[List any third parties/processors — e.g. analytics providers, cloud hosting, payment processors — or state that data isn't shared.]</p>
+    <h2>Network access is read-only, fixed, and off by default</h2>
+    <p>
+      The app's only network capability is a read-only connection to a small, compiled-in list
+      of hosts — the sources it's built to import from (for example a Google Sheet, Splitwise,
+      or a wearable's API), used to pull in the records you've connected. This capability is
+      switched off until you turn it on, and its use is logged.
+    </p>
 
-    <h2>Data retention & deletion</h2>
-    <p>[Describe how long data is kept and how a user can request deletion of their account/data.]</p>
+    <h2>What we don't collect</h2>
+    <p>
+      We don't run analytics on your usage, we don't collect crash reports containing personal
+      data, and we have no advertising or tracking of any kind. There is nothing for us to sell,
+      because there is nothing that reaches us.
+    </p>
 
-    <h2>Your rights</h2>
-    <p>[Describe applicable rights, e.g. GDPR/CCPA, and how to exercise them.]</p>
+    <h2>Your data, your device</h2>
+    <p>
+      Because everything is stored locally, deleting the app deletes your data. There is no
+      account to close and no server-side copy to request deletion of.
+    </p>
+
+    <h2>Changes to this policy</h2>
+    <p>
+      If this changes — for instance if a future version adds an optional, clearly-disclosed
+      sync feature — this page will be updated to describe it before that feature ships.
+    </p>
 
     <h2>Contact</h2>
-    <p>Questions about this policy can be sent to <a href="mailto:hello@renovatio.app">hello@renovatio.app</a>.</p>
+    <p>Questions about this policy can be sent to <a href="mailto:eduardo@renovatio.app">eduardo@renovatio.app</a>.</p>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p class="footer-meta">&copy; <span id="year"></span> Renovatio. All rights reserved.</p>
+      <p class="footer-meta">© <span id="year"></span> Renovatio MarTech &amp; Growth UG (haftungsbeschränkt).</p>
     </div>
   </footer>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>

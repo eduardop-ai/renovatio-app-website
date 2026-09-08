@@ -3,31 +3,30 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Renovatio — [ONE-LINE TAGLINE HERE]</title>
-  <meta name="description" content="[SHORT SEO DESCRIPTION OF THE RENOVATIO APP HERE — 1-2 sentences.]" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%23b5651d%22/></svg>" />
+  <title>Renovatio — a personal analytics app for iOS</title>
+  <meta name="description" content="Renovatio reads the records you already keep — habits, body, money, calendar, place — and shows any day, week, month or year with all of them side by side. It computes on your phone and keeps everything there. In development for iOS." />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
 
   <header class="site-header">
     <div class="container nav">
-      <a class="brand" href="/">
-        <span class="brand-mark" aria-hidden="true"></span>
-        Renovatio
+      <a class="wordmark" href="/">
+        <span class="rule" aria-hidden="true"></span>
+        <span class="name">Renovatio</span>
       </a>
 
       <nav>
         <ul class="nav-links">
-          <li><a href="#features">Features</a></li>
-          <li><a href="#how-it-works">How it works</a></li>
-          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#what-it-is">What it is</a></li>
+          <li><a href="#modules">Modules</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
 
-      <div class="nav-cta">
-        <a class="btn btn-ghost" href="mailto:hello@renovatio.app">Contact</a>
-        <a class="btn btn-primary" href="#download">Get the app</a>
+      <div class="nav-right">
+        <button class="theme-toggle" type="button">Dark mode</button>
         <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
       </div>
     </div>
@@ -37,163 +36,253 @@
 
     <!-- ============ HERO ============ -->
     <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <span class="eyebrow">Renovatio App</span>
-          <h1>[HERO HEADLINE — what Renovatio helps people do]</h1>
-          <p class="lead">
-            [HERO SUBHEADLINE — 1-2 sentences on the core value prop and who it's for.]
-          </p>
-          <div class="btn-row">
-            <a class="btn btn-primary" href="#download">Get the app</a>
-            <a class="btn btn-ghost" href="#features">See features</a>
-          </div>
+      <div class="container">
+        <span class="badge"><span class="dot" aria-hidden="true"></span>In development for iOS — not yet on the App Store</span>
+        <h1>Eleven years of your own records, finally in the same room.</h1>
+        <p class="lead">
+          Renovatio reads the records you already keep — habits, body, money, calendar, place —
+          and shows any day, week, month or year with all of them side by side. It computes on
+          your phone and it keeps everything there.
+        </p>
+        <p>
+          It is not a tracker. Nothing is entered twice and nothing is estimated. Every figure on
+          every screen comes from a record that already existed: a Google Sheet kept daily since
+          2018, a Splitwise export, a portfolio file, a wearable, a Timeline export. The app's job
+          is the join, the arithmetic and the honesty.
+        </p>
+      </div>
+    </section>
 
-          <div class="hero-stats">
-            <div>
-              <span class="stat-num">[#]</span>
-              <span class="stat-label">[stat label, e.g. active users]</span>
+    <!-- ============ SCREENSHOTS ============ -->
+    <section id="screens">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Screens</span>
+          <h2>Rendered from synthetic data</h2>
+          <p>Every number below is moved and every quoted log entry is replaced. Nothing here is a real record.</p>
+        </div>
+
+        <div class="shots">
+          <div class="shot-frame"><div class="shot-empty">Launcher — light<br />pending</div></div>
+          <div class="shot-frame"><div class="shot-empty">Launcher — dark<br />pending</div></div>
+          <div class="shot-frame"><div class="shot-empty">C.A.R.L.O.S.<br />pending</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MODULES ============ -->
+    <section id="modules">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Six modules</span>
+          <h2>What each one answers</h2>
+          <p>Five read the joined record. The sixth reads the other five.</p>
+        </div>
+
+        <div class="module-grid">
+          <div class="module-card" style="--hue: var(--hue-time-travel);">
+            <div class="module-top">
+              <h3>Time Travel</h3>
+              <span class="module-tag">Operational</span>
             </div>
-            <div>
-              <span class="stat-num">[#]</span>
-              <span class="stat-label">[stat label]</span>
-            </div>
-            <div>
-              <span class="stat-num">[#]</span>
-              <span class="stat-label">[stat label]</span>
+            <p>What was this day like? And the same day in every other year?</p>
+            <div class="module-meta">
+              <div><strong>Sources</strong> — all of them</div>
+              <div><strong>Span</strong> — 2015–2026</div>
             </div>
           </div>
-        </div>
 
-        <div class="hero-art">
-          <div class="placeholder-label">
-            App screenshot / product mockup goes here.<br />
-            Drop an image into <code>assets/</code> and swap this block for an <code>&lt;img&gt;</code>.
+          <div class="module-card" style="--hue: var(--hue-biopulse);">
+            <div class="module-top">
+              <h3>BioPulse</h3>
+              <span class="module-tag">Operational</span>
+            </div>
+            <p>How is the body doing — HRV, sleep, training load, composition?</p>
+            <div class="module-meta">
+              <div><strong>Sources</strong> — Intervals.icu, Withings, Urban Sports</div>
+              <div><strong>Span</strong> — 2015–2026</div>
+            </div>
+          </div>
+
+          <div class="module-card" style="--hue: var(--hue-eq-compass);">
+            <div class="module-top">
+              <h3>EQ Compass</h3>
+              <span class="module-tag">Operational</span>
+            </div>
+            <p>Six daily habits, streaks, and the written record.</p>
+            <div class="module-meta">
+              <div><strong>Sources</strong> — a daily sheet</div>
+              <div><strong>Span</strong> — 2018–2026</div>
+            </div>
+          </div>
+
+          <div class="module-card" style="--hue: var(--hue-opex-hub);">
+            <div class="module-top">
+              <h3>OpEx Hub</h3>
+              <span class="module-tag">Operational</span>
+            </div>
+            <p>Household and business spend, by month and category.</p>
+            <div class="module-meta">
+              <div><strong>Sources</strong> — Splitwise</div>
+              <div><strong>Span</strong> — 2017–2026</div>
+            </div>
+          </div>
+
+          <div class="module-card" style="--hue: var(--hue-growthscope);">
+            <div class="module-top">
+              <h3>GrowthScope</h3>
+              <span class="module-tag">Operational</span>
+            </div>
+            <p>What the money actually earned, and what the next 15 years look like.</p>
+            <div class="module-meta">
+              <div><strong>Sources</strong> — Portfolio Performance</div>
+              <div><strong>Span</strong> — 2019–2026</div>
+            </div>
+          </div>
+
+          <div class="module-card" style="--hue: var(--hue-carlos);">
+            <div class="module-top">
+              <h3>C.A.R.L.O.S.</h3>
+              <span class="module-tag">Synthesis</span>
+            </div>
+            <p>The day, week, month and year pulled together — what changed, what stopped, what the record supports saying.</p>
+            <div class="module-meta">
+              <div><strong>Sources</strong> — all five modules</div>
+              <div><strong>Span</strong> — 2015–2026</div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ============ LOGOS / TRUST (optional, delete if not applicable) ============ -->
-    <!--
-    <section class="logos">
+    <!-- ============ WHAT IT IS / DIFFERENTIATORS ============ -->
+    <section id="what-it-is">
       <div class="container">
-        <p class="eyebrow" style="text-align:center;">As featured in / trusted by</p>
+        <div class="section-head">
+          <span class="eyebrow">What makes it unusual</span>
+          <h2>Also all true, which matters more</h2>
+        </div>
+
+        <div class="trait-list">
+          <div class="trait">
+            <h3>It runs on the device.</h3>
+            <p>
+              The summaries are written by Apple's on-device foundation model. No account, no
+              API key, no request leaves the phone. There is no server, and there is no code in
+              the app that sends personal data anywhere — the only network path it has is
+              read-only, to a compiled-in list of hosts, and it is switched off until you turn it
+              on.
+            </p>
+          </div>
+          <div class="trait">
+            <h3>It refuses to state a number it cannot trace.</h3>
+            <p>
+              The model is handed findings a script already computed and is not allowed to add to
+              them. Every numeral it writes is checked back against the input before the sentence
+              reaches the screen; one it cannot account for and the whole briefing is discarded,
+              with the reason shown. A summary you cannot check is a summary you cannot use.
+            </p>
+          </div>
+          <div class="trait">
+            <h3>A missing measurement is shown as missing.</h3>
+            <p>
+              Not as a zero, not smoothed over. If spend has not been fetched for six days, the
+              app says the spend record is six days behind, and does not draw a flat line.
+            </p>
+          </div>
+          <div class="trait">
+            <h3>It says how much it is standing on.</h3>
+            <p>
+              Every average carries the number of days that produced it. Every comparison carries
+              the number on each side. A correlation across three hundred days and one across
+              thirty are not the same claim, and the app never lets them look alike.
+            </p>
+          </div>
+          <div class="trait">
+            <h3>The questions are fixed before it looks.</h3>
+            <p>
+              Sixteen of them, and all sixteen are reported — the ones that found nothing too.
+              Confidence intervals are widened for the number of questions asked. Anything else is
+              a fishing expedition.
+            </p>
+          </div>
+          <div class="trait">
+            <h3>It shows the record, not a conclusion.</h3>
+            <p>
+              When a habit stops for longer than usual, the app shows the gap, how unusual it is
+              against every other gap on record, and what was written in the log that day. It
+              puts the two next to each other. It does not tell you one caused the other.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
-    -->
 
-    <!-- ============ FEATURES ============ -->
-    <section id="features" class="band">
+    <!-- ============ FACTS ============ -->
+    <section id="facts">
       <div class="container">
-        <div class="section-head center">
-          <span class="eyebrow">Features</span>
-          <h2>[FEATURES SECTION HEADLINE]</h2>
-          <p>[One sentence framing why these features matter.]</p>
+        <div class="section-head">
+          <span class="eyebrow">The record, as of 2026-09-08</span>
+          <h2>What's actually joined</h2>
         </div>
 
-        <div class="feature-grid">
-          <div class="feature-card">
-            <div class="feature-icon">①</div>
-            <h3>[Feature one title]</h3>
-            <p>[Feature one description — what it does and the benefit to the user.]</p>
+        <div class="facts">
+          <div class="fact">
+            <span class="num">4,140</span>
+            <span class="fact-label">days in the joined record<br />2015-04-25 → 2026-09-07</span>
           </div>
-          <div class="feature-card">
-            <div class="feature-icon">②</div>
-            <h3>[Feature two title]</h3>
-            <p>[Feature two description.]</p>
+          <div class="fact">
+            <span class="num">3,037</span>
+            <span class="fact-label">days of daily habit logs, unbroken<br />since 2018-05-16, zero gaps</span>
           </div>
-          <div class="feature-card">
-            <div class="feature-icon">③</div>
-            <h3>[Feature three title]</h3>
-            <p>[Feature three description.]</p>
+          <div class="fact">
+            <span class="num">92</span>
+            <span class="fact-label">months carrying categorised spend<br />since 2017-04-05</span>
           </div>
-          <div class="feature-card">
-            <div class="feature-icon">④</div>
-            <h3>[Feature four title]</h3>
-            <p>[Feature four description.]</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">⑤</div>
-            <h3>[Feature five title]</h3>
-            <p>[Feature five description.]</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">⑥</div>
-            <h3>[Feature six title]</h3>
-            <p>[Feature six description.]</p>
+          <div class="fact">
+            <span class="num">6</span>
+            <span class="fact-label">modules<br />five operational, one synthesis</span>
           </div>
         </div>
+
+        <div class="section-head" style="margin-top: 48px;">
+          <span class="eyebrow">Sources</span>
+        </div>
+        <ul class="source-list">
+          <li>Google Sheet (daily habit log)</li>
+          <li>Splitwise</li>
+          <li>Portfolio Performance</li>
+          <li>Intervals.icu</li>
+          <li>Withings</li>
+          <li>Urban Sports Club</li>
+          <li>Google Maps Timeline</li>
+          <li>Open-Meteo</li>
+          <li>iCloud &amp; Google calendars</li>
+        </ul>
       </div>
     </section>
 
-    <!-- ============ HOW IT WORKS ============ -->
-    <section id="how-it-works">
+    <!-- ============ COMPANY / CONTACT ============ -->
+    <section id="contact">
       <div class="container">
-        <div class="section-head center">
-          <span class="eyebrow">How it works</span>
-          <h2>[HOW IT WORKS HEADLINE]</h2>
+        <div class="section-head">
+          <span class="eyebrow">Organization</span>
+          <h2>Built and operated by</h2>
         </div>
 
-        <div class="steps">
-          <div class="step">
-            <span class="step-num">1</span>
-            <h3>[Step one title]</h3>
-            <p>[Step one description.]</p>
-          </div>
-          <div class="step">
-            <span class="step-num">2</span>
-            <h3>[Step two title]</h3>
-            <p>[Step two description.]</p>
-          </div>
-          <div class="step">
-            <span class="step-num">3</span>
-            <h3>[Step three title]</h3>
-            <p>[Step three description.]</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ FAQ ============ -->
-    <section id="faq" class="band">
-      <div class="container">
-        <div class="section-head center">
-          <span class="eyebrow">FAQ</span>
-          <h2>Common questions</h2>
-        </div>
-
-        <div class="faq-list">
-          <details class="faq-item" open>
-            <summary>[Question one, e.g. Is Renovatio free?]</summary>
-            <p>[Answer one.]</p>
-          </details>
-          <details class="faq-item">
-            <summary>[Question two, e.g. What platforms is it available on?]</summary>
-            <p>[Answer two.]</p>
-          </details>
-          <details class="faq-item">
-            <summary>[Question three, e.g. How is my data handled?]</summary>
-            <p>[Answer three — link to <a href="privacy.html">Privacy Policy</a> if relevant.]</p>
-          </details>
-          <details class="faq-item">
-            <summary>[Question four]</summary>
-            <p>[Answer four.]</p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ DOWNLOAD CTA ============ -->
-    <section id="download">
-      <div class="cta-band">
-        <div class="container" style="padding:0;">
-          <h2>[DOWNLOAD CTA HEADLINE]</h2>
-          <p>[One sentence reinforcing the value prop, then push to download.]</p>
-          <div class="btn-row">
-            <a class="btn btn-primary" href="#" aria-disabled="true">[App Store link]</a>
-            <a class="btn btn-ghost" href="#" aria-disabled="true">[Google Play link]</a>
-          </div>
+        <div class="info-card">
+          <dl>
+            <dt>Entity</dt>
+            <dd>Renovatio MarTech &amp; Growth UG (haftungsbeschränkt)</dd>
+            <dt>Registered</dt>
+            <dd>Germany</dd>
+            <dt>Platform</dt>
+            <dd>iOS 26 and later, built for iPhone</dd>
+            <dt>Status</dt>
+            <dd>In development — not yet available on the App Store</dd>
+            <dt>Contact</dt>
+            <dd><a href="mailto:eduardo@renovatio.app">eduardo@renovatio.app</a></dd>
+          </dl>
         </div>
       </div>
     </section>
@@ -203,20 +292,19 @@
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
-        <a class="brand" href="/">
-          <span class="brand-mark" aria-hidden="true"></span>
-          Renovatio
+        <a class="wordmark" href="/">
+          <span class="rule" aria-hidden="true"></span>
+          <span class="name">Renovatio</span>
         </a>
         <ul class="footer-links">
-          <li><a href="#features">Features</a></li>
-          <li><a href="#how-it-works">How it works</a></li>
-          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#what-it-is">What it is</a></li>
+          <li><a href="#modules">Modules</a></li>
           <li><a href="privacy.html">Privacy</a></li>
           <li><a href="terms.html">Terms</a></li>
-          <li><a href="mailto:hello@renovatio.app">Contact</a></li>
+          <li><a href="mailto:eduardo@renovatio.app">Contact</a></li>
         </ul>
       </div>
-      <p class="footer-meta">&copy; <span id="year"></span> Renovatio. All rights reserved.</p>
+      <p class="footer-meta">© <span id="year"></span> Renovatio MarTech &amp; Growth UG (haftungsbeschränkt).</p>
     </div>
   </footer>
 
