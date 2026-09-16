@@ -12,8 +12,8 @@ in a browser to preview, or serve the folder with any static file server.
 
 ```
 index.html      Home page — what Renovatio is, the six modules, facts, contact
-privacy.html    Privacy policy (real claims — no server, everything on-device)
-terms.html      Terms of use (pre-release note; will apply once the app ships)
+privacy/index.html  Privacy policy (real claims — no server, everything on-device) — served at /privacy
+terms/index.html    Terms of use (pre-release note; will apply once the app ships) — served at /terms
 css/styles.css  All styling — brand tokens (light + dark) live in :root at the top
 js/main.js      Mobile nav toggle + light/dark theme toggle (persisted via localStorage)
 assets/screenshots/  Synthetic app screenshots (see below) — currently empty
